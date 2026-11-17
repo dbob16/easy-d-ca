@@ -1,0 +1,17 @@
+{
+  pki {
+    ca local {
+      name "{$CA_NAME:Easy Local CA}"
+    }
+  }
+  admin off
+}
+
+{$CA_DOMAIN}:80 {
+  handle_path /root.crt {
+    root * /data/caddy/pki/authorities/local/root.crt
+    file_server
+  }
+}
+
+import /caddyfiles/*.caddy

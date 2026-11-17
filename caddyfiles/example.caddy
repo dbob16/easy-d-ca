@@ -1,0 +1,4 @@
+service.domain.lan {
+  tls internal
+  reverse_proxy service_name:port
+}

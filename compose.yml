@@ -1,0 +1,14 @@
+services:
+  local-ca:
+    image: caddy:latest
+    restart: always
+    env_file:
+      - ".env"
+    volumes:
+      - "./data:/data"
+      - "./config:/config"
+      - "./caddyfiles:/caddyfiles:ro"
+      - "./Caddyfile:/etc/caddy/Caddyfile:ro"
+    ports:
+      - "80:80"
+      - "443:443"
