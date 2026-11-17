@@ -1,6 +1,6 @@
-# Easy Local CA
+# Easy Declarative (local) Certificate Authority
 
-Easy Local CA is a Caddyfile + a Docker run script and compose file that I developed to make it as easy as possible to host a local Certificate Authority for an internal LAN homelab or development env.
+Easy-D-CA is a Caddyfile + a Docker run script and compose file that I developed to make it as easy as possible to host a local Certificate Authority for an internal LAN homelab or development env.
 
 I pretty much made it for my homelab which I also use for development.
 
@@ -21,7 +21,7 @@ The primary usage of it is to act as a gateway between WebGUI's of different hom
 
 ```sh
 cd /path/to/your/dir
-git clone https://github.com/dbob16/elca .
+git clone https://github.com/dbob16/easy-d-ca
 ```
 
 - Modify any files as you see fit
